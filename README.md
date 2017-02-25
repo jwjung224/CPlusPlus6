@@ -39,4 +39,4 @@ the user enters the pairs in any order: 5 7 10 1 -4 3 -2 0 -1 -1 on one line or 
 (b). Set one coefficient, called setCoeff, e.g., 
 P.setCoeff(50,0); // set x^0 coeff to 50
 
-•polyAssignment.doc provides complete instruction.
+• polyAssignment.doc provides complete instruction.
