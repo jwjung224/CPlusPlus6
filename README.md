@@ -32,7 +32,7 @@ int coeff = P.getCoeff(2); <br>
 cout << "coeff of power 2 of P is: " << coeff << endl; <br>
 
 <strong>4. Mutators:</strong><br>
-(a). Overload >> to input all coeffs (sets all terms of one Poly, in a loop; it is expected that a user enters one coefficient and an exponent repeatedly, Enters -1 for both when done; no data type-checking). e.g., 
+(a). Overload >> to input all coeffs (sets all terms of one Poly, in a loop; it is expected that a user enters one coefficient and an exponent repeatedly, Enters -1 for both when done; no data type-checking). e.g.,<br> 
 to set A, Poly A(2,7); so that A is +5x^7 -4x^3 +10x –2
 the user enters the pairs in any order: 5 7 10 1 -4 3 -2 0 -1 -1 on one line or multiple lines. <br>
 
