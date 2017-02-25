@@ -6,38 +6,35 @@
 </p>
 
 Develop a full class:<br>
-<strong>1. All proper constructor and destructor functions, </strong><br>
-e.g.,<br>
-Poly A(5,7); 	// Memory is reserved for polynomial A, with a largest power of 7  // and the coefficient is set to 5: +5x^7. 
-Poly B(2); 	        // B has one element, initialized to +2x^0
-Poly X;                      // Initialized to 0x^0 (zero polynomial)
-Poly C(A);                 // C is an exact copy (deep copy) of A.
+<strong>1. All proper constructor and destructor functions, </strong> e.g.,<br>
+Poly A(5,7); 	// Memory is reserved for polynomial A, with a largest power of 7 and the coefficient is set to 5: +5x^7. <br>
+Poly B(2); 	  // B has one element, initialized to +2x^0. <br>
+Poly X;       // Initialized to 0x^0 (zero polynomial). <br>
+Poly C(A);    // C is an exact copy (deep copy) of A. <br>
 
-To make sure you understand memory, when Poly A is +5x^7 -4x^3 +10x -2 memory for the object A looks like
- 
-<strong>2. Overload common operators:</strong>
-(a). The addition, subtraction, and multiplication operators (+, -, *) to add, subtract, multiply two polynomials
-(b). The assignment operator (=) to assign one polynomial to another
-(c). The addition, subtraction, multiplication assignment operators (+=, -=, *=)
-(d). The equality and inequality operators (==, !=)
+<strong>2. Overload common operators:</strong><br>
+(a). The addition, subtraction, and multiplication operators (+, -, *) to add, subtract, multiply two polynomials <br>
+(b). The assignment operator (=) to assign one polynomial to another <br>
+(c). The addition, subtraction, multiplication assignment operators (+=, -=, *=) <br>
+(d). The equality and inequality operators (==, !=) <br>
 
-<strong>3. Accessors:</strong>
+<strong>3. Accessors:</strong><br>
 (a). Overload << to output an entire polynomial, print “ +5x^3 -2x^2 +4” to represent the Poly
-5 x cubed minus 2 x squared plus 4. Use the following exact formatting. Must-do rules for displaying polynomials:
-•	Use lowercase x
-•	A nonzero coefficient and its sign are always displayed (display exactly one blank before every sign)
-•	Do not display a new line in operator<< at the end of the polynomial
-•	Do not display extra blanks at the end or anywhere else in the polynomial
-•	A power of 1 is not displayed and x is not shown at all for a power of 0, e.g., +1x^4 +2x -10
-•	Don't print a term if the coefficient is zero, except if all the coefficients are zero, then print " 0"
-(b). Get one term's coefficient, called getCoeff, e.g.,
-int coeff = P.getCoeff(2);
-cout << "coeff of power 2 of P is: " << coeff << endl;
+5 x cubed minus 2 x squared plus 4. Use the following exact formatting. Must-do rules for displaying polynomials: <br>
+•	Use lowercase x <br>
+•	A nonzero coefficient and its sign are always displayed (display exactly one blank before every sign) <br>
+•	Do not display a new line in operator<< at the end of the polynomial <br>
+•	Do not display extra blanks at the end or anywhere else in the polynomial <br>
+•	A power of 1 is not displayed and x is not shown at all for a power of 0, e.g., +1x^4 +2x -10 <br>
+•	Don't print a term if the coefficient is zero, except if all the coefficients are zero, then print " 0" <br>
+(b). Get one term's coefficient, called getCoeff, e.g., <br>
+int coeff = P.getCoeff(2); <br>
+cout << "coeff of power 2 of P is: " << coeff << endl; <br>
 
-<strong>4. Mutators:</strong>
+<strong>4. Mutators:</strong><br>
 (a). Overload >> to input all coeffs (sets all terms of one Poly, in a loop; it is expected that a user enters one coefficient and an exponent repeatedly, Enters -1 for both when done; no data type-checking). e.g., 
 to set A, Poly A(2,7); so that A is +5x^7 -4x^3 +10x –2
-the user enters the pairs in any order: 5 7 10 1 -4 3 -2 0 -1 -1 on one line or multiple lines.
+the user enters the pairs in any order: 5 7 10 1 -4 3 -2 0 -1 -1 on one line or multiple lines. <br>
 
 (b). Set one coefficient, called setCoeff, e.g., 
 P.setCoeff(50,0); // set x^0 coeff to 50
